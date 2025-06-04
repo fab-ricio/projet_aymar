@@ -11,13 +11,15 @@ const Header = () => {
       right: '50%',
       marginLeft: '-50vw',
       marginRight: '-50vw',
-      background: '#2563eb',
+      background: 'rgba(22,101,52,0.7)', // vert foncé avec transparence
       color: '#fff',
-      boxShadow: '0 2px 12px rgba(37,99,235,0.10)',
+      boxShadow: '0 2px 12px rgba(22,101,52,0.10)',
       padding: 0,
       zIndex: 1000,
       borderBottom: 'none', // supprime toute bordure
-      minHeight: 0 // force la hauteur minimale à 0
+      minHeight: 0, // force la hauteur minimale à 0
+      backdropFilter: 'blur(8px)', // Ajoute un effet de flou derrière le header
+      WebkitBackdropFilter: 'blur(8px)'
     }}>
       <nav style={{
         display: 'flex',

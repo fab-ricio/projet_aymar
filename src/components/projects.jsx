@@ -26,14 +26,14 @@ const Projects = () => {
       justifyContent: 'center',
       gap: '2rem',
       padding: '3rem 0',
-      background: '#f8fafc',
+      background: 'transparent',
       flexWrap: 'wrap'
     }}>
       {projects.map((project, idx) => (
         <div key={idx} style={{
           background: '#fff',
           borderRadius: '1rem',
-          boxShadow: '0 2px 12px rgba(0,0,0,0.08)',
+          boxShadow: '0 2px 12px rgba(22,101,52,0.10)', // vert foncé
           maxWidth: '320px',
           padding: '1.5rem',
           display: 'flex',
@@ -48,18 +48,18 @@ const Projects = () => {
             borderRadius: '0.75rem',
             marginBottom: '1rem'
           }} />
-          <h3 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '0.5rem', color: '#1a202c' }}>{project.title}</h3>
+          <h3 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '0.5rem', color: '#166534' }}>{project.title}</h3>
           <p style={{ color: '#4b5563', marginBottom: '1.5rem' }}>{project.description}</p>
           <button style={{
             padding: '0.7rem 2rem',
             fontSize: '1rem',
-            background: '#2563eb',
+            background: '#166534', // vert foncé
             color: '#fff',
             border: 'none',
             borderRadius: '0.5rem',
             cursor: 'pointer',
             fontWeight: 600,
-            boxShadow: '0 2px 8px rgba(37,99,235,0.10)'
+            boxShadow: '0 2px 8px rgba(22,101,52,0.10)'
           }}>
             Voir plus
           </button>

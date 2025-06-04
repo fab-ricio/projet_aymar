@@ -26,14 +26,14 @@ const About = () => {
       justifyContent: 'center',
       gap: '2.5rem',
       padding: '3rem 0',
-      background: '#f8fafc',
+      background: 'transparent',
       flexWrap: 'wrap'
     }}>
       {aboutItems.map((item, idx) => (
         <div key={idx} style={{
           background: '#fff',
           borderRadius: '1rem',
-          boxShadow: '0 2px 12px rgba(0,0,0,0.08)',
+          boxShadow: '0 2px 12px rgba(22,101,52,0.10)', // vert foncé
           maxWidth: '260px',
           padding: '2rem 1.5rem',
           display: 'flex',
@@ -47,7 +47,7 @@ const About = () => {
             marginBottom: '1.2rem',
             objectFit: 'contain'
           }} />
-          <h5 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '0.5rem', color: '#2563eb' }}>{item.title}</h5>
+          <h5 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '0.5rem', color: '#166534' }}>{item.title}</h5>
           <p style={{ color: '#4b5563', fontSize: '1rem' }}>{item.description}</p>
         </div>
       ))}
