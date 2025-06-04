@@ -15,7 +15,9 @@ const Header = () => {
       color: '#fff',
       boxShadow: '0 2px 12px rgba(37,99,235,0.10)',
       padding: 0,
-      zIndex: 1000
+      zIndex: 1000,
+      borderBottom: 'none', // supprime toute bordure
+      minHeight: 0 // force la hauteur minimale à 0
     }}>
       <nav style={{
         display: 'flex',
@@ -23,7 +25,8 @@ const Header = () => {
         justifyContent: 'space-between',
         maxWidth: '1200px',
         margin: '0 auto',
-        padding: '1rem 2rem',
+        padding: 0, // Suppression du padding vertical
+        height: '64px', // Hauteur fixe pour le header
       }}>
         <div style={{ fontWeight: 700, fontSize: '1.5rem', letterSpacing: '1px' }}>waste 2 gaz</div>
         <ul style={{

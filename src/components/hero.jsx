@@ -7,8 +7,8 @@ const Hero = () => {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-between',
-      padding: '4rem 2rem',
-      background: 'linear-gradient(90deg, #f8fafc 60%, #e0e7ef 100%)',
+      padding: '0 2rem', // Suppression du padding top/bottom
+      background: `linear-gradient(rgba(248,250,252,0.05), rgba(224,231,239,0.05)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat`,
       minHeight: '100vh', // occupe toute la hauteur de l'écran
       width: '100vw', // occupe toute la largeur de l'écran
       position: 'relative',
