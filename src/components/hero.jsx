@@ -8,7 +8,7 @@ const Hero = () => {
       alignItems: 'center',
       justifyContent: 'center',
       padding: '0 8vw', // Augmente le padding latéral pour éviter le retour à la ligne
-      background: `linear-gradient(rgba(248,250,252,0.05), rgba(224,231,239,0.05)), url('https://assets.onecompiler.app/43kpa5yxd/43kp9x7px/WASTE%202%20GAZ.png') center/cover no-repeat`,
+      background: `linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://assets.onecompiler.app/43kpa5yxd/43kp9x7px/WASTE%202%20GAZ.png') center/cover no-repeat`,
       minHeight: '100vh',
       width: '100vw',
       position: 'relative',
@@ -19,8 +19,8 @@ const Hero = () => {
       borderRadius: 0,
       boxShadow: '0 4px 24px rgba(0,0,0,0.07)'
     }}>
-      <div style={{ maxWidth: '600px', width: '100%', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <h1 style={{ fontSize: '3rem', fontWeight: 700, marginBottom: '1rem', color: 'whitesmoke', display: 'inline-block', textAlign: 'center' }}>
+      <div style={{ width: '100%', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <h1 style={{ fontSize: '3rem', fontWeight: 700, marginBottom: '1rem', color: 'whitesmoke', display: 'inline-block', textAlign: 'center', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
           Transformez vos déchets en énergie propre
         </h1>
         <p style={{ fontSize: '1.25rem', color: 'whitesmoke', marginBottom: '2rem' }}>
