@@ -9,8 +9,14 @@ const Hero = () => {
       justifyContent: 'space-between',
       padding: '4rem 2rem',
       background: 'linear-gradient(90deg, #f8fafc 60%, #e0e7ef 100%)',
-      minHeight: '60vh',
-      borderRadius: '1.5rem',
+      minHeight: '100vh', // occupe toute la hauteur de l'écran
+      width: '100vw', // occupe toute la largeur de l'écran
+      position: 'relative',
+      left: '50%',
+      right: '50%',
+      marginLeft: '-50vw',
+      marginRight: '-50vw',
+      borderRadius: 0,
       boxShadow: '0 4px 24px rgba(0,0,0,0.07)'
     }}>
       <div style={{ maxWidth: '600px' }}>
