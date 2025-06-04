@@ -3,19 +3,19 @@ import "../App.css";
 
 const projects = [
   {
-    title: "Boutique Mode",
-    description: "Une plateforme e-commerce moderne pour vêtements et accessoires, avec paiement sécurisé et gestion de stock.",
-    image: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80"
+    title: "MiniDigesteur 100L",
+    description: "Idéal pour 3-5 personnes",
+    image: "https://assets.onecompiler.app/43kpa5yxd/43kp9x7px/WhatsApp%20Image%202025-06-03%20at%2015.35.10.jpeg"
   },
   {
-    title: "Électronique Shop",
-    description: "Vente en ligne de produits électroniques, interface intuitive et filtres avancés pour la recherche.",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80"
+    title: "FamilyDigesteur 200L",
+    description: "Jusqu'à 9 personnes",
+    image: "https://assets.onecompiler.app/43kpa5yxd/43kp9x7px/v2.jpeg"
   },
   {
-    title: "Maison & Déco",
-    description: "Site de décoration intérieure avec catalogue interactif et suggestions personnalisées.",
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+    title: "AgroDigesteur 500L",
+    description: "Usage agricole",
+    image: "https://assets.onecompiler.app/43kpa5yxd/43kp9x7px/v3.jpeg"
   }
 ];
 
@@ -24,23 +24,35 @@ const Projects = () => {
     <section className="projects-section" style={{
       display: 'flex',
       justifyContent: 'center',
-      gap: '2rem',
+      gap: '5rem',
       padding: '3rem 0',
-      background: 'transparent',
-      flexWrap: 'wrap'
+      background: '#c6ecd9', // vert plus prononcé pour la section
+      flexWrap: 'wrap',
+      height: 'auto', // hauteur auto pour s'adapter au contenu
+      width: '100vw', // occupe toute la largeur de l'écran
+      position: 'relative',
+      left: '50%',
+      right: '50%',
+      marginLeft: '-50vw',
+      marginRight: '-50vw',
     }}>
       {projects.map((project, idx) => (
-        <div key={idx} style={{
-          background: '#fff',
-          borderRadius: '1rem',
-          boxShadow: '0 2px 12px rgba(22,101,52,0.10)', // vert foncé
-          maxWidth: '320px',
-          padding: '1.5rem',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          textAlign: 'center'
-        }}>
+        <div
+          key={idx}
+          className="project-card"
+          style={{
+            background: '#fff', // fond blanc pour chaque projet
+            borderRadius: '1rem',
+            boxShadow: '0 2px 12px rgba(22,101,52,0.10)',
+            maxWidth: '320px',
+            padding: '1.5rem',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            textAlign: 'center',
+            transition: 'transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s cubic-bezier(.4,2,.6,1)',
+          }}
+        >
           <img src={project.image} alt={project.title} style={{
             width: '100%',
             height: '180px',

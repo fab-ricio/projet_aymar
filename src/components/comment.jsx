@@ -15,8 +15,8 @@ const Comment = () => {
       margin: '2rem auto'
     }}>
       <img
-        src="https://randomuser.me/api/portraits/men/32.jpg"
-        alt="Auteur"
+        src="#"
+        alt="Aymar"
         style={{
           width: '80px',
           height: '80px',
@@ -33,18 +33,8 @@ const Comment = () => {
         textAlign: 'center',
         fontSize: '1.15rem'
       }}>
-        "Le succès n'est pas la clé du bonheur. Le bonheur est la clé du succès. Si vous aimez ce que vous faites, vous réussirez."
+        "On ne pensait pas que c'était aussi simple à utiliser. Maintenant on cuisine avec nos épluchures !"
       </blockquote>
-      <span style={{
-        marginTop: '1rem',
-        color: '#2563eb',
-        fontWeight: 600,
-        fontSize: '1rem',
-        display: 'block',
-        textAlign: 'center'
-      }}>
-        – Albert Schweitzer
-      </span>
     </div>
   );
 };
