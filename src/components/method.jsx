@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import image1 from "../../images/image 1.jpg";
 import image3 from "../../images/image 3.jpg";
@@ -16,46 +16,128 @@ const cards = [
   }
 ];
 
+const fullscreenIcon = (
+  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#166534" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" style={{ background: 'rgba(255,255,255,0.85)', borderRadius: '50%' }}>
+    <path d="M8 3H5a2 2 0 0 0-2 2v3m0 8v3a2 2 0 0 0 2 2h3m8-18h3a2 2 0 0 1 2 2v3m0 8v3a2 2 0 0 1-2 2h-3" />
+  </svg>
+);
+
 const Method = () => {
+  const [fullscreenImg, setFullscreenImg] = useState(null);
   return (
-    <section style={{
-      display: 'flex',
-      justifyContent: 'center',
-      gap: '8rem',
-      padding: '2.5rem 0',
-      background: '#f6fff9',
-      flexWrap: 'wrap',
-      marginTop: '2.5rem',
-      maxWidth: '100vw',
-      minHeight: '480px', // pour s'adapter à la taille des images
-    }}>
-      {cards.map((card, idx) => (
-        <div key={idx} style={{
-          background: '#fff',
-          borderRadius: '1rem',
-          boxShadow: '0 2px 12px rgba(22,101,52,0.10)',
-          maxWidth: '440px', // agrandi pour s'adapter à l'image
-          width: '440px', // largeur fixe pour la carte
-          padding: '2rem', // padding augmenté
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          textAlign: 'center',
-        }}>
-          <img src={card.image} alt={card.title} style={{
-            width: '400px', // largeur encore plus grande
-            height: '400px', // hauteur encore plus grande
-            objectFit: 'cover',
-            borderRadius: '0.75rem',
-            marginBottom: '1rem',
-            background: '#e5e7eb', // gris clair si image non chargée
-            display: 'block'
-          }} />
-          <h3 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '0.5rem', color: '#166534' }}>{card.title}</h3>
-          <p style={{ color: '#4b5563' }}>{card.description}</p>
+    <>
+      <section style={{
+        display: 'flex',
+        justifyContent: 'center',
+        gap: '8rem',
+        padding: '2.5rem 0',
+        background: '#f6fff9',
+        flexWrap: 'wrap',
+        marginTop: '2.5rem',
+        maxWidth: '100vw',
+        minHeight: '480px',
+      }}>
+        {cards.map((card, idx) => (
+          <div key={idx} style={{
+            background: '#fff',
+            borderRadius: '1rem',
+            boxShadow: '0 2px 12px rgba(22,101,52,0.10)',
+            maxWidth: '440px',
+            width: '440px',
+            padding: '2rem',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            textAlign: 'center',
+            position: 'relative',
+          }}>
+            <div style={{ position: 'relative', width: '400px', height: '400px' }}>
+              <img
+                src={card.image}
+                alt={card.title}
+                className="method-img"
+                style={{
+                  width: '400px',
+                  height: '400px',
+                  objectFit: 'cover',
+                  borderRadius: '0.75rem',
+                  marginBottom: '1rem',
+                  background: '#e5e7eb',
+                  display: 'block',
+                  cursor: 'pointer',
+                  transition: 'filter 0.35s cubic-bezier(.4,2,.6,1)',
+                }}
+                onClick={() => setFullscreenImg(card.image)}
+              />
+              <div
+                style={{
+                  position: 'absolute',
+                  top: 16,
+                  right: 16,
+                  opacity: 0.92,
+                  transition: 'opacity 0.2s',
+                  cursor: 'pointer',
+                  zIndex: 2,
+                  background: 'none',
+                  padding: 0,
+                  display: 'none',
+                }}
+                className="fullscreen-icon"
+                onClick={() => setFullscreenImg(card.image)}
+              >
+                {fullscreenIcon}
+              </div>
+            </div>
+          </div>
+        ))}
+      </section>
+      {/* Modal plein écran */}
+      {fullscreenImg && (
+        <div
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '100vw',
+            height: '100vh',
+            background: 'rgba(0,0,0,0.85)',
+            zIndex: 9999,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+          onClick={() => setFullscreenImg(null)}
+        >
+          <img
+            src={fullscreenImg}
+            alt="fullscreen"
+            style={{
+              maxWidth: '90vw',
+              maxHeight: '90vh',
+              borderRadius: '1.2rem',
+              boxShadow: '0 4px 32px rgba(0,0,0,0.25)',
+              background: '#fff',
+            }}
+          />
         </div>
-      ))}
-    </section>
+      )}
+      <style>{`
+        .fullscreen-icon {
+          display: none;
+        }
+        .fullscreen-icon:hover {
+          opacity: 1 !important;
+        }
+        .project-card:hover .fullscreen-icon,
+        div[style*='position: relative'] .fullscreen-icon:hover,
+        div[style*='position: relative']:hover .fullscreen-icon {
+          display: block !important;
+        }
+        .method-img:hover {
+          filter: contrast(1.25) brightness(0.85) saturate(1.1);
+        }
+      `}</style>
+    </>
   );
 };
 
