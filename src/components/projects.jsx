@@ -21,7 +21,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="projects-section" style={{
+    <section className="projects-section" id="projets" style={{
       display: 'flex',
       justifyContent: 'center',
       gap: '5rem',

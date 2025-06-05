@@ -3,9 +3,9 @@ import "../App.css";
 
 const aboutItems = [
   {
-    icon: "https://cdn-icons-png.flaticon.com/512/2909/2909765.png", // écologique
+    icon: "https://cdn-icons-png.flaticon.com/512/60/60577.png", // logo recyclage trois flèches en cycle
     title: "Écologique",
-    description: "Réduit l'empreinte carbone et favorise la préservation de l'environnement."
+    description: "Réduction des déchets."
   },
   {
     icon: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png", // économique
