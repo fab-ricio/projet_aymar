@@ -6,6 +6,7 @@ import Projects from "./projects.jsx";
 import Method from "./method.jsx";
 import Comment from "./comment.jsx";
 import Footer from "./footer.jsx";
+import Members from "./members.jsx";
 
 const Main = () => {
   return (
@@ -16,6 +17,7 @@ const Main = () => {
         <About />
         <Projects />
         <Method />
+        <Members />
         <Comment />
       </div>
       <Footer />

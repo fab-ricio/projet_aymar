@@ -49,3 +49,47 @@
   box-shadow: 0 8px 32px rgba(22, 101, 52, 0.18), 0 1.5px 8px rgba(22, 101, 52, 0.10);
   z-index: 2;
 }
+
+.member-card {
+  transition: transform 0.18s cubic-bezier(.4,2,.6,1), box-shadow 0.18s cubic-bezier(.4,2,.6,1);
+  cursor: pointer;
+  position: relative;
+}
+
+.member-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 8px 32px rgba(22,101,52,0.18);
+  z-index: 2;
+}
+
+.member-popup {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: 110%;
+  transform: translateX(-50%);
+  background: #174c2a;
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.7rem;
+  font-size: 1rem;
+  font-weight: 500;
+  white-space: nowrap;
+  box-shadow: 0 4px 16px rgba(22,101,52,0.18);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s cubic-bezier(.4,2,.6,1), transform 0.18s cubic-bezier(.4,2,.6,1);
+}
+
+.member-card:hover .member-popup {
+  display: block;
+  opacity: 1;
+  transform: translateX(-50%) translateY(-8px) scale(1.04);
+}
+
+@media (max-width: 600px) {
+  .member-popup {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.8rem;
+  }
+}
