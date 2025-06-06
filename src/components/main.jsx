@@ -7,6 +7,7 @@ import Method from "./method.jsx";
 import Comment from "./comment.jsx";
 import Footer from "./footer.jsx";
 import Members from "./members.jsx";
+import Contact from "./contact.jsx";
 
 const Main = () => {
   return (
@@ -19,6 +20,7 @@ const Main = () => {
         <Method />
         <Members />
         <Comment />
+        <Contact />
       </div>
       <Footer />
     </>

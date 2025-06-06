@@ -1,0 +1,50 @@
+import React from "react";
+
+const Contact = () => (
+  <section id="contact" style={{
+    background: '#f6fff9',
+    borderRadius: 0,
+    boxShadow: 'none',
+    margin: 0,
+    maxWidth: '100vw',
+    width: '100vw',
+    minHeight: 'unset', // Remove forced full height
+    padding: '3.5rem 0 2.5rem 0', // Add vertical padding for spacing
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    position: 'relative',
+    left: '50%',
+    right: '50%',
+    marginLeft: '-50vw',
+    marginRight: '-50vw',
+  }}>
+    <h2 style={{
+      color: '#174c2a',
+      fontSize: '2rem',
+      fontWeight: 700,
+      marginBottom: '2rem',
+      letterSpacing: '0.5px',
+      textAlign: 'center',
+    }}>Contact</h2>
+    <div style={{ fontSize: '1.15rem', color: '#174c2a', fontWeight: 600, margin: '1.5rem 0', textAlign: 'center', width: '100%' }}>
+      <div style={{ marginBottom: '1.1rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.7rem' }}>
+        <span style={{ fontSize: '1.4rem' }}>✉️</span>
+        <span>Email :</span>
+        <a href="mailto:contact@waste2gaz.com" style={{ color: '#166534', textDecoration: 'underline', fontWeight: 500 }}>contact@waste2gaz.com</a>
+      </div>
+      <div style={{ marginBottom: '1.1rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.7rem' }}>
+        <span style={{ fontSize: '1.4rem' }}>📞</span>
+        <span>Téléphone :</span>
+        <a href="tel:+33612345678" style={{ color: '#166534', textDecoration: 'underline', fontWeight: 500 }}>+33 6 12 34 56 78</a>
+      </div>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.7rem' }}>
+        <span style={{ fontSize: '1.4rem' }}>📍</span>
+        <span>123 rue de l'Écologie, 75000 Paris</span>
+      </div>
+    </div>
+  </section>
+);
+
+export default Contact;
