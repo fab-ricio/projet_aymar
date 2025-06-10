@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+import commentaire from '../../images/commentaire.jpg';
 
 const Comment = () => {
   return (
@@ -15,7 +16,7 @@ const Comment = () => {
       margin: '2rem auto'
     }}>
       <img
-        src="images/commentaire.jpg"
+        src={commentaire}
         alt="Aymar"
         style={{
           width: '80px',

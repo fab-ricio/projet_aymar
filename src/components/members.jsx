@@ -1,21 +1,25 @@
 import React from "react";
+import aymar from '../../images/Aymar-Wendy.jpg';
+import faly from '../../images/Faly-Ramonja.jpg';
+import amine from '../../images/amine-kouchou.jpg';
+import hanane from '../../images/hanane.jpg';
 
 const members = [
   {
     name: "Aymar Wendy",
-    avatar: "images/Aymar-Wendy.jpg"
+    avatar: aymar
   },
   {
     name: "Faly Ramonja",
-    avatar: "images/Faly-Ramonja.jpg"
+    avatar: faly
   },
   {
     name: "Amine Kouchou",
-    avatar: "images/amine-kouchou.jpg"
+    avatar: amine
   },
   {
     name: "Hanane Oukrich",
-    avatar: "images/hanane.jpg"
+    avatar: hanane
   }
 ];
 

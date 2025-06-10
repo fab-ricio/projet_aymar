@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+import brochure from '../../images/Brochure.pdf';
 
 const Hero = () => {
   return (
@@ -90,16 +91,22 @@ const Hero = () => {
               cursor: 'pointer',
               fontWeight: 600,
               boxShadow: '0 2px 8px rgba(22,101,52,0.15)',
-              width: 'auto', // largeur auto pour alignement horizontal
+              width: 'auto',
               maxWidth: '320px',
               marginBottom: 0,
               minWidth: '140px',
+            }}
+            onClick={() => {
+              const section = document.getElementById('projets');
+              if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+              }
             }}
           >
             Voir nos modèles
           </button>
           <a
-            href="/Brochure.pdf"
+            href={brochure}
             target="_blank"
             rel="noopener noreferrer"
             style={{ textDecoration: 'none', width: 'auto', maxWidth: '320px' }}

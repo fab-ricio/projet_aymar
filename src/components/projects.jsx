@@ -1,21 +1,24 @@
 import React from "react";
 import "../App.css";
+import img200L from '../../images/200L.jpg';
+import img500L from '../../images/500L.jpg';
+import img1000 from '../../images/1000.jpg';
 
 const projects = [
   {
     title: "MiniDigesteur 200L",
     description: "Idéal pour 3-5 personnes",
-    image: "images/200L.jpg"
+    image: img200L
   },
   {
     title: "FamilyDigesteur 500L",
     description: "Jusqu'à 9 personnes",
-    image: "images/500L.jpg"
+    image: img500L
   },
   {
     title: "AgroDigesteur 1000",
     description: "Usage agricole",
-    image: "images/1000.jpg"
+    image: img1000
   }
 ];
 
