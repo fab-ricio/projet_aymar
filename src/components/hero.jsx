@@ -65,7 +65,7 @@ const Hero = () => {
             lineHeight: 1.4,
           }}
         >
-          Profitez de réductions exclusives sur une large sélection de produits tendance. Livraison rapide et service client 24/7.
+          Livraison installation et services après vente-assurés.
         </p>
         <div
           className="hero-btns"

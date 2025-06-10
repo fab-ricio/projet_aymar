@@ -24,8 +24,8 @@ const Main = () => {
         {/* Texte défilant moderne, boucle parfaite, conserve le background vert foncé */}
         <div className="marquee" style={{ background: '#174c2a', color: '#fff' }}>
           <div className="marquee-track">
-            <span>🌍 Découvrez nos solutions innovantes pour transformer vos déchets en énergie propre ! Contactez-nous pour une démonstration gratuite. ♻️🔥🌱</span>
-            <span>🌍 Découvrez nos solutions innovantes pour transformer vos déchets en énergie propre ! Contactez-nous pour une démonstration gratuite. ♻️🔥🌱</span>
+            <span>🌍 Découvrez nos solutions innovantes pour transformer vos déchets en énergie propre !</span>
+            <span>🌍 Découvrez nos solutions innovantes pour transformer vos déchets en énergie propre !</span>
           </div>
         </div>
       </div>
