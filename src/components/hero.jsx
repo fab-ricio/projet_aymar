@@ -3,7 +3,7 @@ import "../App.css";
 
 const Hero = () => {
   return (
-    <section className="hero-section" style={{
+    <section className="hero-section" id="hero" style={{
       marginTop: '64px', // Décale le hero sous le header fixe
       display: 'flex',
       alignItems: 'center',

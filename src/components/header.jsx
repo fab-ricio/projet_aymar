@@ -38,7 +38,7 @@ const Header = () => {
           margin: 0,
           padding: 0
         }}>
-          <li><a href="#" style={{ color: '#fff', textDecoration: 'none', fontWeight: 500 }}>Accueil</a></li>
+          <li><a href="#hero" style={{ color: '#fff', textDecoration: 'none', fontWeight: 500 }}>Accueil</a></li>
           <li><a href="#projets" style={{ color: '#fff', textDecoration: 'none', fontWeight: 500 }}>Projets</a></li>
           <li><a href="#membres" style={{ color: '#fff', textDecoration: 'none', fontWeight: 500 }}>Membres</a></li>
           <li><a href="#contact" style={{ color: '#fff', textDecoration: 'none', fontWeight: 500 }}>Contact</a></li>
