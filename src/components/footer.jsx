@@ -26,10 +26,10 @@ const Footer = () => {
       <div style={{ maxWidth: '900px', margin: '0 auto' }}>
         <h4 style={{ marginBottom: '1rem', fontWeight: 700 }}>Contact & Informations</h4>
         <p style={{ margin: 0 }}>
-          Email : <a href="mailto:contact@ecommerce.com" style={{ color: '#60a5fa' }}>contact@ecommerce.com</a> | Téléphone : <a href="tel:+33123456789" style={{ color: '#60a5fa' }}>+33 1 23 45 67 89</a>
+          Email : <a href="mailto:contact@waste2gaz.com" style={{ color: '#60a5fa' }}>contact@waste2gaz.com</a> | Téléphone : <a href="tel:+33612345678" style={{ color: '#60a5fa' }}>+212 767799668</a>
         </p>
         <p style={{ margin: '0.5rem 0 0 0', fontSize: '0.95rem', color: '#cbd5e1' }}>
-          Adresse : 123 Avenue du Commerce, 75000 Paris, France
+          Adresse : Cité Universitaire de Ziaten | 90000 Tanger.
         </p>
         <div style={{ marginTop: '1.5rem', fontSize: '0.9rem', color: '#94a3b8' }}>
           &copy; {new Date().getFullYear()} E-Commerce. Tous droits réservés.

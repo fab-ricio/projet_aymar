@@ -35,7 +35,7 @@ const Main = () => {
           <div style={{
             display: 'inline-block',
             whiteSpace: 'nowrap',
-            animation: 'marquee 18s linear infinite',
+            animation: 'marquee 36s linear infinite',
           }}>
             🌍 Découvrez nos solutions innovantes pour transformer vos déchets en énergie propre ! Contactez-nous pour une démonstration gratuite. ♻️🔥🌱
           </div>
@@ -44,7 +44,6 @@ const Main = () => {
               0% { transform: translateX(100%); }
               100% { transform: translateX(-100%); }
             }
-            .marquee-anim { animation: marquee 18s linear infinite; }
           `}</style>
         </div>
       </div>
