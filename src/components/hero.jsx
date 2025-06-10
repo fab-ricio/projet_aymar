@@ -4,20 +4,19 @@ import "../App.css";
 const Hero = () => {
   return (
     <section className="hero-section" style={{
+      marginTop: '64px', // Décale le hero sous le header fixe
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      padding: '0 8vw', // Augmente le padding latéral pour éviter le retour à la ligne
-      background: `linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://assets.onecompiler.app/43kpa5yxd/43kp9x7px/WASTE%202%20GAZ.png') center/cover no-repeat`,
+      padding: 0,
+      margin: 0,
+      background: `linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://assets.onecompiler.app/43kpa5yxd/43kp9x7px/WASTE%202%20GAZ.png') top center/cover no-repeat`,
       minHeight: '100vh',
-      width: '100vw',
-      position: 'relative',
-      left: '50%',
-      right: '50%',
-      marginLeft: '-50vw',
-      marginRight: '-50vw',
+      width: '100%',
+      position: 'static',
       borderRadius: 0,
-      boxShadow: '0 4px 24px rgba(0,0,0,0.07)'
+      boxShadow: '0 4px 24px rgba(0,0,0,0.07)',
+      top: 0,
     }}>
       <div style={{ width: '100%', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <h1 style={{ fontSize: '3rem', fontWeight: 700, marginBottom: '1rem', color: 'whitesmoke', display: 'inline-block', textAlign: 'center', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
