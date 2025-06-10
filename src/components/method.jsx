@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-import image1 from "images/image 1.jpg";
-import image3 from "images/image 3.jpg";
+import image1 from '../../images/image 1.jpg';
+import image3 from '../../images/image 3.jpg';
 
 const cards = [
   {
