@@ -13,7 +13,7 @@ const Main = () => {
   return (
     <>
       <Header />
-      <div className="container" style={{ paddingTop: 0, paddingBottom: '10rem', margin: 0 }}>
+      <div className="container" style={{ paddingTop: 0, paddingBottom: 0, margin: 0 }}>
         <Hero />
         <About />
         <Projects />

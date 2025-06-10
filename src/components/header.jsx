@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+import Logo from "../logo.jsx";
 
 const Header = () => {
   return (
@@ -30,7 +31,9 @@ const Header = () => {
         padding: 0, // Suppression du padding vertical
         height: '64px', // Hauteur fixe pour le header
       }}>
-        <div style={{ fontWeight: 700, fontSize: '1.5rem', letterSpacing: '1px' }}>waste 2 gaz</div>
+        <div style={{ fontWeight: 700, fontSize: '1.5rem', letterSpacing: '1px', display: 'flex', alignItems: 'center' }}>
+          <Logo style={{ width: 48, height: 48, marginRight: 10 }} />
+        </div>
         <ul style={{
           display: 'flex',
           gap: '2rem',
