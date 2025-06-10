@@ -3,6 +3,34 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  flex: 1 0 auto;
+}
+
+body, #root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  flex: 1 0 auto;
+  max-width: 100vw;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+.container, main, .main-content {
+  flex: 1 0 auto;
+  width: 100%;
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -155,6 +183,16 @@
   color: #222;
   font-weight: 500;
   word-break: break-all;
+}
+
+footer {
+  flex-shrink: 0;
+  width: 100%;
+  margin: 0;
+  left: unset;
+  right: unset;
+  margin-left: unset;
+  margin-right: unset;
 }
 
 @media (max-width: 700px) {
