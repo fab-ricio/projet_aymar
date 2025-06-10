@@ -60,7 +60,11 @@ const Members = () => (
             borderRadius: '50%',
             objectFit: 'cover',
             marginBottom: '1rem',
-            boxShadow: '0 2px 8px rgba(22,101,52,0.10)'
+            boxShadow: '0 2px 8px rgba(22,101,52,0.10)',
+            border: '3px solid #e0e0e0',
+            background: '#fff',
+            aspectRatio: '1/1',
+            display: 'block'
           }} />
           <div style={{ color: '#111', fontWeight: 600, fontSize: '1.1rem' }}>{member.name}</div>
         </div>
