@@ -21,30 +21,12 @@ const Main = () => {
         <Members />
         <Comment />
         <Contact />
-        <div style={{
-          width: '100%',
-          overflow: 'hidden',
-          background: '#174c2a',
-          color: '#fff',
-          fontWeight: 600,
-          fontSize: '1.15rem',
-          padding: '0.7rem 0',
-          margin: 0,
-          position: 'relative',
-        }}>
-          <div style={{
-            display: 'inline-block',
-            whiteSpace: 'nowrap',
-            animation: 'marquee 36s linear infinite',
-          }}>
-            🌍 Découvrez nos solutions innovantes pour transformer vos déchets en énergie propre ! Contactez-nous pour une démonstration gratuite. ♻️🔥🌱
+        {/* Texte défilant moderne, boucle parfaite, conserve le background vert foncé */}
+        <div className="marquee" style={{ background: '#174c2a', color: '#fff' }}>
+          <div className="marquee-track">
+            <span>🌍 Découvrez nos solutions innovantes pour transformer vos déchets en énergie propre ! Contactez-nous pour une démonstration gratuite. ♻️🔥🌱</span>
+            <span>🌍 Découvrez nos solutions innovantes pour transformer vos déchets en énergie propre ! Contactez-nous pour une démonstration gratuite. ♻️🔥🌱</span>
           </div>
-          <style>{`
-            @keyframes marquee {
-              0% { transform: translateX(100%); }
-              100% { transform: translateX(-100%); }
-            }
-          `}</style>
         </div>
       </div>
       <Footer />

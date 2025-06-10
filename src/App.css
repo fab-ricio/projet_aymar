@@ -312,3 +312,42 @@ section, .main-content, .container, main {
   width: 100%;
   box-sizing: border-box;
 }
+
+.marquee {
+  width: 100vw;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  background: #f6fff9;
+  color: #174c2a;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.7rem 0;
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-loop 16s linear infinite;
+}
+.marquee-track span {
+  display: inline-block;
+  padding-right: 2.5rem;
+  white-space: nowrap;
+}
+@keyframes marquee-loop {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 600px) {
+  .marquee {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
+  .marquee-track {
+    animation-duration: 13s;
+  }
+  .marquee-track span {
+    padding-right: 1.2rem;
+  }
+}
