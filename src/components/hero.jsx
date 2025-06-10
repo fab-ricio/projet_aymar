@@ -95,7 +95,11 @@ const Hero = () => {
               maxWidth: '320px',
               marginBottom: 0,
               minWidth: '140px',
+              transition: 'all 0.18s cubic-bezier(.4,2,.6,1)',
             }}
+            onMouseDown={e => e.currentTarget.style.transform = 'scale(0.96)'}
+            onMouseUp={e => e.currentTarget.style.transform = 'scale(1)'}
+            onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
             onClick={() => {
               const section = document.getElementById('projets');
               if (section) {
@@ -126,7 +130,11 @@ const Hero = () => {
                 boxShadow: '0 2px 8px rgba(22,101,52,0.10)',
                 width: 'auto',
                 minWidth: '140px',
+                transition: 'all 0.18s cubic-bezier(.4,2,.6,1)',
               }}
+              onMouseDown={e => e.currentTarget.style.transform = 'scale(0.96)'}
+              onMouseUp={e => e.currentTarget.style.transform = 'scale(1)'}
+              onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
             >
               Recevoir une brochure
             </button>
@@ -134,6 +142,26 @@ const Hero = () => {
         </div>
       </div>
       {/* Suppression de l'image décorative à droite */}
+      <style>{`
+        .hero-btn {
+          transition: all 0.18s cubic-bezier(.4,2,.6,1), box-shadow 0.18s cubic-bezier(.4,2,.6,1);
+        }
+        .hero-btn:hover {
+          filter: brightness(1.18) contrast(1.13) drop-shadow(0 4px 18px #16653444);
+          transform: scale(1.07) translateY(-4px) rotate(-1.5deg);
+          box-shadow: 0 8px 32px rgba(22,101,52,0.18), 0 1.5px 8px rgba(22,101,52,0.10);
+          outline: none;
+        }
+        .hero-btn:focus-visible {
+          outline: 2.5px solid #166534;
+          outline-offset: 2px;
+        }
+        .hero-btn:active {
+          filter: brightness(0.97) contrast(1.1);
+          transform: scale(0.95) translateY(1px) rotate(0.5deg);
+          box-shadow: 0 2px 8px rgba(22,101,52,0.10);
+        }
+      `}</style>
     </section>
   );
 };
