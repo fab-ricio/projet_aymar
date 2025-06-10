@@ -5,17 +5,17 @@ const projects = [
   {
     title: "MiniDigesteur 200L",
     description: "Idéal pour 3-5 personnes",
-    image: "/images/200L.jpg"
+    image: "images/200L.jpg"
   },
   {
     title: "FamilyDigesteur 500L",
     description: "Jusqu'à 9 personnes",
-    image: "/images/500L.jpg"
+    image: "images/500L.jpg"
   },
   {
     title: "AgroDigesteur 1000",
     description: "Usage agricole",
-    image: "/images/1000.jpg"
+    image: "images/1000.jpg"
   }
 ];
 

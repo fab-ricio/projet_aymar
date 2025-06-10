@@ -3,19 +3,19 @@ import React from "react";
 const members = [
   {
     name: "Aymar Wendy",
-    avatar: "/images/Aymar-Wendy.jpg"
+    avatar: "images/Aymar-Wendy.jpg"
   },
   {
     name: "Faly Ramonja",
-    avatar: "/images/Faly-Ramonja.jpg"
+    avatar: "images/Faly-Ramonja.jpg"
   },
   {
     name: "Amine Kouchou",
-    avatar: "/images/amine-kouchou.jpg"
+    avatar: "images/amine-kouchou.jpg"
   },
   {
     name: "Hanane Oukrich",
-    avatar: "/images/hanane.jpg"
+    avatar: "images/hanane.jpg"
   }
 ];
 

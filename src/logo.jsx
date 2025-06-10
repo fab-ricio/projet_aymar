@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import waste2gaz from "../images/waste-2-gaz.jpg";
+import waste2gaz from "images/waste-2-gaz.jpg";
 
 const Logo = ({ style = {} }) => {
   const [isHovered, setIsHovered] = useState(false);
