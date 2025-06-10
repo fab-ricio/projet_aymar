@@ -26,6 +26,8 @@ const Members = () => (
     flexDirection: 'column',
     alignItems: 'center',
     margin: '0 0 2rem 0',
+    width: '100%',
+    boxSizing: 'border-box',
   }}>
     <h2 style={{ color: '#111', fontWeight: 700, marginBottom: '2rem', fontSize: '2rem' }}>Membres du projet</h2>
     <div style={{
@@ -33,7 +35,8 @@ const Members = () => (
       flexWrap: 'wrap',
       gap: '2.5rem',
       justifyContent: 'center',
-      width: '100%'
+      width: '100%',
+      boxSizing: 'border-box',
     }}>
       {members.map((member, idx) => (
         <div key={idx} className="member-card" style={{
@@ -45,9 +48,11 @@ const Members = () => (
           alignItems: 'center',
           minWidth: '180px',
           maxWidth: '220px',
+          width: '100%',
           textAlign: 'center',
           position: 'relative',
           background: '#fff',
+          boxSizing: 'border-box',
         }}>
           <img src={member.avatar} alt={member.name} style={{
             width: '80px',

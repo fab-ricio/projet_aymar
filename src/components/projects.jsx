@@ -24,48 +24,56 @@ const Projects = () => {
     <section className="projects-section" id="projets" style={{
       display: 'flex',
       justifyContent: 'center',
-      gap: '5rem',
+      gap: '3rem',
       padding: '3rem 0',
-      background: '#c6ecd9', // vert plus prononcé pour la section
+      background: '#c6ecd9',
       flexWrap: 'wrap',
-      height: 'auto', // hauteur auto pour s'adapter au contenu
-      width: '100vw', // occupe toute la largeur de l'écran
+      height: 'auto',
+      width: '100%', // largeur fluide
       position: 'relative',
-      left: '50%',
-      right: '50%',
-      marginLeft: '-50vw',
-      marginRight: '-50vw',
+      boxSizing: 'border-box',
+      margin: 0,
+      left: 'unset',
+      right: 'unset',
+      marginLeft: 0,
+      marginRight: 0,
+      overflow: 'hidden',
     }}>
       {projects.map((project, idx) => (
         <div
           key={idx}
           className="project-card"
           style={{
-            background: '#fff', // fond blanc pour chaque projet
+            background: '#fff',
             borderRadius: '1rem',
             boxShadow: '0 2px 12px rgba(22,101,52,0.10)',
             maxWidth: '320px',
+            width: '100%', // largeur fluide
+            minWidth: '220px',
             padding: '1.5rem',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
             textAlign: 'center',
             transition: 'transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s cubic-bezier(.4,2,.6,1)',
+            boxSizing: 'border-box',
           }}
         >
           <img src={project.image} alt={project.title} style={{
             width: '100%',
+            maxWidth: '260px',
             height: '180px',
             objectFit: 'cover',
             borderRadius: '0.75rem',
-            marginBottom: '1rem'
+            marginBottom: '1rem',
+            boxSizing: 'border-box',
           }} />
           <h3 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '0.5rem', color: '#166534' }}>{project.title}</h3>
           <p style={{ color: '#4b5563', marginBottom: '1.5rem' }}>{project.description}</p>
           <button style={{
             padding: '0.7rem 2rem',
             fontSize: '1rem',
-            background: '#166534', // vert foncé
+            background: '#166534',
             color: '#fff',
             border: 'none',
             borderRadius: '0.5rem',

@@ -12,18 +12,20 @@ const Footer = () => {
       borderTopLeftRadius: '1.5rem',
       borderTopRightRadius: '1.5rem',
       boxShadow: '0 -2px 12px rgba(0,0,0,0.10)',
-      width: '100vw',
-      position: 'relative', // Le footer n'est plus fixé
-      left: '50%',
-      right: '50%',
+      width: '100%',
+      position: 'relative',
+      left: 'unset',
+      right: 'unset',
       bottom: 0,
-      marginLeft: '-50vw',
-      marginRight: '-50vw',
+      marginLeft: 0,
+      marginRight: 0,
       borderRadius: 0,
-      marginBottom: '-8px', // supprime tout espace blanc sous le footer
-      zIndex: 1000
+      marginBottom: '-8px',
+      zIndex: 1000,
+      boxSizing: 'border-box',
+      overflow: 'hidden',
     }}>
-      <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+      <div style={{ maxWidth: '900px', margin: '0 auto', width: '100%' }}>
         <h4 style={{ marginBottom: '1rem', fontWeight: 700 }}>Contact & Informations</h4>
         <p style={{ margin: 0 }}>
           Email : <a href="mailto:contact@waste2gaz.com" style={{ color: '#60a5fa' }}>contact@waste2gaz.com</a> | Téléphone : <a href="tel:+33612345678" style={{ color: '#60a5fa' }}>+212 767799668</a>
@@ -35,7 +37,7 @@ const Footer = () => {
           &copy; {new Date().getFullYear()} E-Commerce. Tous droits réservés.
         </div>
         {/* Réseaux sociaux modernes */}
-        <div style={{ marginTop: '1.5rem', display: 'flex', justifyContent: 'center', gap: '1.5rem' }}>
+        <div style={{ marginTop: '1.5rem', display: 'flex', justifyContent: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>
           { [
             {
               name: 'LinkedIn',

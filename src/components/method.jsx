@@ -29,13 +29,16 @@ const Method = () => {
       <section style={{
         display: 'flex',
         justifyContent: 'center',
-        gap: '8rem',
+        gap: '4rem',
         padding: '2.5rem 0',
         background: '#f6fff9',
         flexWrap: 'wrap',
         marginTop: '2.5rem',
-        maxWidth: '100vw',
-        minHeight: '480px',
+        maxWidth: '100%',
+        minHeight: '320px',
+        width: '100%',
+        boxSizing: 'border-box',
+        margin: 0,
       }}>
         {cards.map((card, idx) => (
           <div key={idx} style={{
@@ -43,22 +46,26 @@ const Method = () => {
             borderRadius: '1rem',
             boxShadow: '0 2px 12px rgba(22,101,52,0.10)',
             maxWidth: '440px',
-            width: '440px',
+            width: '100%',
+            minWidth: '220px',
             padding: '2rem',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
             textAlign: 'center',
             position: 'relative',
+            boxSizing: 'border-box',
           }}>
-            <div style={{ position: 'relative', width: '400px', height: '400px' }}>
+            <div style={{ position: 'relative', width: '100%', maxWidth: '400px', height: 'auto' }}>
               <img
                 src={card.image}
                 alt={card.title}
                 className="method-img"
                 style={{
-                  width: '400px',
-                  height: '400px',
+                  width: '100%',
+                  maxWidth: '400px',
+                  height: 'auto',
+                  aspectRatio: '1/1',
                   objectFit: 'cover',
                   borderRadius: '0.75rem',
                   marginBottom: '1rem',
@@ -66,6 +73,7 @@ const Method = () => {
                   display: 'block',
                   cursor: 'pointer',
                   transition: 'filter 0.35s cubic-bezier(.4,2,.6,1)',
+                  boxSizing: 'border-box',
                 }}
                 onClick={() => setFullscreenImg(card.image)}
               />
@@ -135,6 +143,16 @@ const Method = () => {
         }
         .method-img:hover {
           filter: contrast(1.25) brightness(0.85) saturate(1.1);
+        }
+        @media (max-width: 700px) {
+          section {
+            gap: 1.2rem !important;
+            padding: 1.2rem 0 !important;
+          }
+          .method-img {
+            max-width: 95vw !important;
+            height: auto !important;
+          }
         }
       `}</style>
     </>

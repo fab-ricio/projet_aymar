@@ -27,7 +27,10 @@ const About = () => {
       gap: '2.5rem',
       padding: '3rem 0',
       background: 'transparent',
-      flexWrap: 'wrap'
+      flexWrap: 'wrap',
+      width: '100%',
+      boxSizing: 'border-box',
+      margin: 0,
     }}>
       {aboutItems.map((item, idx) => (
         <div key={idx} style={{
@@ -35,11 +38,14 @@ const About = () => {
           borderRadius: '1rem',
           boxShadow: '0 2px 12px rgba(22,101,52,0.10)',
           maxWidth: '260px',
+          width: '100%',
+          minWidth: '180px',
           padding: '2rem 1.5rem',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          textAlign: 'center'
+          textAlign: 'center',
+          boxSizing: 'border-box',
         }}>
           <span style={{
             fontSize: '3.5rem',

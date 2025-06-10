@@ -15,12 +15,14 @@ const Hero = () => {
         margin: 0,
         background:
           `linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://assets.onecompiler.app/43kpa5yxd/43kp9x7px/WASTE%202%20GAZ.png') top center/cover no-repeat`,
-        minHeight: '100vh',
+        minHeight: 'calc(100vh - 64px)', // corrige le scroll vertical fantôme
         width: '100%',
+        maxWidth: '100vw',
         position: 'static',
         borderRadius: 0,
         boxShadow: '0 4px 24px rgba(0,0,0,0.07)',
         top: 0,
+        overflowX: 'hidden',
       }}
     >
       <div
