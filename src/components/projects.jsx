@@ -3,19 +3,19 @@ import "../App.css";
 
 const projects = [
   {
-    title: "MiniDigesteur 100L",
+    title: "MiniDigesteur 200L",
     description: "Idéal pour 3-5 personnes",
-    image: "https://assets.onecompiler.app/43kpa5yxd/43kp9x7px/WhatsApp%20Image%202025-06-03%20at%2015.35.10.jpeg"
+    image: "/images/200L.jpg"
   },
   {
-    title: "FamilyDigesteur 200L",
+    title: "FamilyDigesteur 500L",
     description: "Jusqu'à 9 personnes",
-    image: "https://assets.onecompiler.app/43kpa5yxd/43kp9x7px/v2.jpeg"
+    image: "/images/500L.jpg"
   },
   {
-    title: "AgroDigesteur 500L",
+    title: "AgroDigesteur 1000",
     description: "Usage agricole",
-    image: "https://assets.onecompiler.app/43kpa5yxd/43kp9x7px/v3.jpeg"
+    image: "/images/1000.jpg"
   }
 ];
 

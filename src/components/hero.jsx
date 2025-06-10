@@ -40,19 +40,22 @@ const Hero = () => {
           }}>
             Voir nos modèles
           </button>
-          <button style={{
-            padding: '1rem 2.5rem',
-            fontSize: '1.1rem',
-            background: 'rgba(255,255,255,0.15)',
-            color: '#fff',
-            border: '1.5px solid #fff',
-            borderRadius: '0.75rem',
-            cursor: 'pointer',
-            fontWeight: 600,
-            boxShadow: '0 2px 8px rgba(22,101,52,0.10)'
-          }}>
-            Recevoir une brochure
-          </button>
+          <a href="/Brochure.pdf" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+            <button style={{
+              padding: '1rem 2.5rem',
+              textDecoration: 'none',
+              fontSize: '1.1rem',
+              background: 'rgba(255,255,255,0.15)',
+              color: '#fff',
+              border: '1.5px solid #fff',
+              borderRadius: '0.75rem',
+              cursor: 'pointer',
+              fontWeight: 600,
+              boxShadow: '0 2px 8px rgba(22,101,52,0.10)'
+            }}>
+              Recevoir une brochure
+            </button>
+          </a>
         </div>
       </div>
       {/* Suppression de l'image décorative à droite */}

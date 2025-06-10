@@ -37,11 +37,11 @@ const Contact = () => (
       <div style={{ marginBottom: '1.1rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.7rem' }}>
         <span style={{ fontSize: '1.4rem' }}>📞</span>
         <span>Téléphone :</span>
-        <a href="tel:+33612345678" style={{ color: '#166534', textDecoration: 'underline', fontWeight: 500 }}>+33 6 12 34 56 78</a>
+        <a href="tel:+33612345678" style={{ color: '#166534', textDecoration: 'underline', fontWeight: 500 }}>+212 767799668</a>
       </div>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.7rem' }}>
         <span style={{ fontSize: '1.4rem' }}>📍</span>
-        <span>123 rue de l'Écologie, 75000 Paris</span>
+        <span>Cité Universitaire de Ziaten | 90000 Tanger.</span>
       </div>
     </div>
   </section>

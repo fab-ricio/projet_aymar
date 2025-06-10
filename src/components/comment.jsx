@@ -15,7 +15,7 @@ const Comment = () => {
       margin: '2rem auto'
     }}>
       <img
-        src="#"
+        src="/images/commentaire.jpg"
         alt="Aymar"
         style={{
           width: '80px',

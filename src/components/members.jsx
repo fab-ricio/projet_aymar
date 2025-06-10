@@ -2,20 +2,20 @@ import React from "react";
 
 const members = [
   {
-    name: "Aymar",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg"
+    name: "Aymar Wendy",
+    avatar: "/images/Aymar-Wendy.jpg"
   },
   {
-    name: "Faly",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg"
+    name: "Faly Ramonja",
+    avatar: "/images/Faly-Ramonja.jpg"
   },
   {
-    name: "Yannick",
-    avatar: "https://randomuser.me/api/portraits/men/65.jpg"
+    name: "Amine Kouchou",
+    avatar: "/images/amine-kouchou.jpg"
   },
   {
-    name: "Sophie M",
-    avatar: "https://randomuser.me/api/portraits/women/68.jpg"
+    name: "Hanane Oukrich",
+    avatar: "/images/hanane.jpg"
   }
 ];
 
