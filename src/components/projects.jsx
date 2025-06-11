@@ -73,19 +73,6 @@ const Projects = () => {
           }} />
           <h3 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '0.5rem', color: '#166534' }}>{project.title}</h3>
           <p style={{ color: '#4b5563', marginBottom: '1.5rem' }}>{project.description}</p>
-          <button style={{
-            padding: '0.7rem 2rem',
-            fontSize: '1rem',
-            background: '#166534',
-            color: '#fff',
-            border: 'none',
-            borderRadius: '0.5rem',
-            cursor: 'pointer',
-            fontWeight: 600,
-            boxShadow: '0 2px 8px rgba(22,101,52,0.10)'
-          }}>
-            Voir plus
-          </button>
         </div>
       ))}
     </section>

@@ -34,7 +34,7 @@ const Contact = () => (
       <div style={{ marginBottom: '1.1rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.7rem' }}>
         <span style={{ fontSize: '1.4rem' }}>✉️</span>
         <span>Email :</span>
-        <a href="mailto:contact@waste2gaz.com" style={{ color: '#166534', textDecoration: 'underline', fontWeight: 500 }}>contact@waste2gaz.com</a>
+        <a href="waste2gaz@gmail.com" style={{ color: '#166534', textDecoration: 'underline', fontWeight: 500 }}>waste2gaz@gmail.com</a>
       </div>
       <div style={{ marginBottom: '1.1rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.7rem' }}>
         <span style={{ fontSize: '1.4rem' }}>📞</span>
