@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import brochure from '../../images/Brochure.pdf';
+import brochure from '../../images/Brochure-waste2gas.pdf';
 
 const Hero = () => {
   return (

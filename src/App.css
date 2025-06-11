@@ -332,7 +332,7 @@ footer {
 .marquee-track {
   display: flex;
   width: max-content;
-  animation: marquee-loop 16s linear infinite;
+  animation: marquee-loop 10s linear infinite;
 }
 .marquee-track span {
   display: inline-block;
@@ -350,7 +350,7 @@ footer {
     padding: 0.5rem 0;
   }
   .marquee-track {
-    animation-duration: 13s;
+    animation-duration: 7s;
   }
   .marquee-track span {
     padding-right: 1.2rem;
