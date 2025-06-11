@@ -34,7 +34,7 @@ const Footer = () => {
           Adresse : Cité Universitaire de Ziaten | 90000 Tanger.
         </p>
         <div style={{ marginTop: '1.5rem', fontSize: '0.9rem', color: '#94a3b8' }}>
-          &copy; {new Date().getFullYear()} E-Commerce. Tous droits réservés.
+          &copy; {new Date().getFullYear()} fabricio. Tous droits réservés.
         </div>
         {/* Réseaux sociaux modernes */}
         <div style={{ marginTop: '1.5rem', display: 'flex', justifyContent: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>
