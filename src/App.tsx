@@ -6,7 +6,6 @@ function App() {
     <>
       <div className="container mt-5">
         <Main />
-        {/* Page vide, prêt à commencer */}
       </div>
     </>
   )
