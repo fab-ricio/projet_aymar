@@ -11,14 +11,14 @@ const Header = () => {
       left: 0,
       right: 0,
       margin: 0,
-      background: 'rgba(22,101,52,0.7)', // vert foncé avec transparence
+      background: 'rgba(22,101,52,0.7)',
       color: '#fff',
       boxShadow: '0 2px 12px rgba(22,101,52,0.10)',
       padding: '0 2rem',
       zIndex: 1000,
-      borderBottom: 'none', // supprime toute bordure
-      minHeight: 0, // force la hauteur minimale à 0
-      backdropFilter: 'blur(8px)', // Ajoute un effet de flou derrière le header
+      borderBottom: 'none',
+      minHeight: 0,
+      backdropFilter: 'blur(8px)',
       WebkitBackdropFilter: 'blur(8px)',
       boxSizing: 'border-box',
       overflow: 'hidden',
@@ -29,8 +29,8 @@ const Header = () => {
         justifyContent: 'space-between',
         maxWidth: '1200px',
         margin: '0 auto',
-        padding: 0, // Suppression du padding vertical
-        height: '64px', // Hauteur fixe pour le header
+        padding: 0,
+        height: '64px',
         width: '100%',
         boxSizing: 'border-box',
       }}>
