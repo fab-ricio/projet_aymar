@@ -16,7 +16,7 @@ const Hero = () => {
         margin: 0,
         background:
           `linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://assets.onecompiler.app/43kpa5yxd/43kp9x7px/WASTE%202%20GAZ.png') top center/cover no-repeat`,
-        minHeight: 'calc(100vh - 64px)', // corrige le scroll vertical fantôme
+        minHeight: 'calc(100vh - 64px)',
         width: '100%',
         maxWidth: '100vw',
         position: 'static',
@@ -76,7 +76,7 @@ const Hero = () => {
             flexWrap: 'wrap',
             width: '100%',
             maxWidth: '420px',
-            flexDirection: 'row', // force l'alignement horizontal par défaut
+            flexDirection: 'row',
           }}
         >
           <button
