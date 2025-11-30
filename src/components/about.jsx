@@ -3,17 +3,17 @@ import "../App.css";
 
 const aboutItems = [
   {
-    icon: "♻️", // logo recyclage emoji
+    icon: "♻️",
     title: "Écologique",
     description: "Réduction des déchets."
   },
   {
-    icon: "🔥", // feu emoji
+    icon: "🔥",
     title: "Économique",
     description: "Biogaz gratuit"
   },
   {
-    icon: "🌱", // plante emoji
+    icon: "🌱",
     title: "Fertilisant",
     description: "Revalorisez le digestat"
   }
